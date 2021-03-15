@@ -107,10 +107,11 @@
             }
 
             //------------------------------------------------------------------
-            var dato= prompt("Indica un valor");
-                console.log(dato+10);
-                document.write(dato+10);
-                alert(dato+10);
+            var dato1 = prompt("Indica un valor");
+            var dato2 = prompt("Indica un segundo valor");
+                console.log(parseInt(dato1)+parseInt(dato2));
+                document.write(parseInt(dato1)+parseInt(dato2));
+                alert(parseInt(dato1)+parseInt(dato2));
 
 
         </script>

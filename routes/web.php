@@ -13,3 +13,4 @@
 
 Route::name('inicio')->get('/', function () { return view('welcome');});
 Route::name('basico')->get('basico/', function () { return view('basico');});
+Route::name('campos')->get('campos/', function () { return view('campos');});

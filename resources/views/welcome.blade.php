@@ -72,6 +72,7 @@
 
                 <div class="links">
                     <a href="{{ route('basico') }}">Basico</a>
+                    <a href="{{ route('campos') }}">Campos</a>
                 </div>
             </div>
         </div>
