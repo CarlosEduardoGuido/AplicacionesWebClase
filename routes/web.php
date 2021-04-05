@@ -16,3 +16,4 @@ Route::name('basico')->get('basico/', function () { return view('basico');});
 Route::name('campos')->get('campos/', function () { return view('campos');});
 Route::name('colores')->get('colores/', function () { return view('colores');});
 Route::name('evaluar')->get('evaluar/', function () { return view('evaluar');});
+Route::name('calculadora')->get('calculadora/', function () { return view('calculadora');});
