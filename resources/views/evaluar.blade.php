@@ -86,7 +86,8 @@
                 Contraseña: <input type="text" id="pass1" onkeyup="cantidad1(this)">
                 <b id="numero">****</b>
                 <b id="seguro">----</b><br>
-                Confirmacion: <input type="text" id="pass2"><br>
+                Confirmacion: <input type="text" id="pass2" onkeyup="cantidad2(this)">
+                <img src="{{ asset('img/paloma.gif')}}" id="correcto" width="20"><br>
                 <button onclick="evalua()">Evaluar</button>
                 <br><br>
                 <hr>
@@ -97,6 +98,7 @@
             </div>
         </div>
         <script type="text/javascript">
+            document.getElementById('correcto').style.visibility = 'hidden';
             function cantidad1(obj){
                     var conteo = obj.value.length;
                     document.getElementById("numero").innerHTML = conteo;
@@ -115,6 +117,16 @@
                             }
                         
 
+                    }
+            }
+            function cantidad2(obj){
+                    var pass1 = document.getElementById("pass1").value;
+                    var pass2 = document.getElementById("pass2").value;
+                    if(pass1 == pass2){
+                            document.getElementById('correcto').style.visibility = 'visible';
+                    }
+                    else{
+                            document.getElementById('correcto').style.visibility = 'hidden';
                     }
             }
         </script>

@@ -75,7 +75,8 @@
                     <a href="{{ route('campos') }}">Campos</a>
                     <a href="{{ route('colores') }}">Colores</a>
                     <a href="{{ route('evaluar') }}">Evaluar</a>
-                    <a href="{{ route('calculadora') }}">Calculadora</a>  
+                    <a href="{{ route('calculadora') }}">Calculadora</a>
+                    <a href="{{ route('validar') }}">Validar</a>  
                 </div>
             </div>
         </div>
