@@ -18,3 +18,5 @@ Route::name('colores')->get('colores/', function () { return view('colores');});
 Route::name('evaluar')->get('evaluar/', function () { return view('evaluar');});
 Route::name('calculadora')->get('calculadora/', function () { return view('calculadora');});
 Route::name('validar')->get('validar/', function () { return view('validar');});
+Route::name('comprobar')->get('comprobar/', function () { return view('comprobar');});
+

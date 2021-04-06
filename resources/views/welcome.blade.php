@@ -77,6 +77,7 @@
                     <a href="{{ route('evaluar') }}">Evaluar</a>
                     <a href="{{ route('calculadora') }}">Calculadora</a>
                     <a href="{{ route('validar') }}">Validar</a>  
+                    <a href="{{ route('comprobar') }}">Comprobar</a>  
                 </div>
             </div>
         </div>
