@@ -20,3 +20,7 @@ Route::name('calculadora')->get('calculadora/', function () { return view('calcu
 Route::name('validar')->get('validar/', function () { return view('validar');});
 Route::name('comprobar')->get('comprobar/', function () { return view('comprobar');});
 
+// -----------------------------------------------
+Route::name('jquery')->get('jquery/', function () { return view('jquery');});
+
+
