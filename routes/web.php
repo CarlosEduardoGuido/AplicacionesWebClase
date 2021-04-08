@@ -24,4 +24,8 @@ Route::name('comprobar')->get('comprobar/', function () { return view('comprobar
 Route::name('jquery')->get('jquery/', function () { return view('jquery');});
 Route::name('formulario')->get('formulario/', function () { return view('formulario');});
 
+Route::name('entrada')->get('entrada/', 'SistemController@entrada');
+// --------------------------------------------------------------------------------------------
+Route::name('js00')->get('js00/', 'JqueryController@js00');
+
 
