@@ -81,6 +81,7 @@
                     <hr>
 
                     <a href="{{ route('jquery') }}">Jquery: Basico</a> 
+                    <a href="{{ route('formulario') }}">Jquery: Formulario</a> 
 
                 </div>
             </div>

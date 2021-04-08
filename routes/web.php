@@ -22,5 +22,6 @@ Route::name('comprobar')->get('comprobar/', function () { return view('comprobar
 
 // -----------------------------------------------
 Route::name('jquery')->get('jquery/', function () { return view('jquery');});
+Route::name('formulario')->get('formulario/', function () { return view('formulario');});
 
 
