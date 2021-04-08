@@ -141,6 +141,23 @@
                             else{ $("#smail").text("Incorrecto"); }
 
                     });
+                    //------------------------------------------------------------------------------------------------
+                    //------------------------------------------------------------------------------------------------
+                    const $input = document.querySelector("#evaluacion");
+                    const patron = /[0-9a-zA-Z_@]+/;
+
+                    $input.addEventListener("keydown", event => {
+                            console.log(event.key);
+                            if(patron.test(event.key)){
+                                    $('#evaluacion').css({ "border":"1px solid #0C0"});
+                            }
+                            else{
+                                    if(event.keyCode== 8 ){ console.log("backspace");}
+                                    else{ event.preventDefault(); }
+                            }
+
+                    });
+
             });
         </script> 
     </head>
@@ -194,6 +211,21 @@
                             <td colspan="3"><input type="submit" name="guardar" id="guardar" class="guardar" value="Guardar"></td>
                         </tr>
                     </table>
+                    <hr><hr>
+
+                    <h4>Evaluacion 4 (impide la escritura de caracteres)</h4>
+                    <input type="text" name="evaluacion" id="evaluacion" class="evaluacion"></td>
+
+                    <br><br>
+                    <hr>
+
+                    <h4>Indicacion de valor (textual/numerico)</h4>
+                    <input type="text" onkeypress="ifTxt(event)"></td><br>
+                    <hr>
+                    <p id="salida">-- -- -- -- --</p>
+                    <hr>
+
+
                     </form>
                 </center>
 
@@ -202,5 +234,12 @@
                 </div>
             </div>
         </div>
+        <script>
+            function ifTxt(event){
+                    var vn = event.keyCode;
+                    var vt = String.fromCharCode(vn);
+                    document.getElementById("salida").innerHTML = "Numerico: " + vn + "<br> Textual: " + vt;
+            }
+        </script>
     </body>
 </html>
