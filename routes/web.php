@@ -25,7 +25,10 @@ Route::name('jquery')->get('jquery/', function () { return view('jquery');});
 Route::name('formulario')->get('formulario/', function () { return view('formulario');});
 
 Route::name('entrada')->get('entrada/', 'SistemController@entrada');
+Route::name('combos')->get('combos/', 'SistemController@combos');
 // --------------------------------------------------------------------------------------------
 Route::name('js00')->get('js00/', 'JqueryController@js00');
+Route::name('js02')->get('js01/', 'JqueryController@js01');
+Route::name('js01')->get('js02/', 'JqueryController@js02');
 
 

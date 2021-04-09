@@ -82,7 +82,8 @@
 
                     <a href="{{ route('jquery') }}">Jquery: Basico</a> 
                     <a href="{{ route('formulario') }}">Jquery: Formulario</a> 
-                    <a href="{{ route('entrada') }}">Jquery: Entrada|Login</a> 
+                    <a href="{{ route('entrada') }}">Jquery: Entrada|Login</a>
+                    <a href="{{ route('combos') }}">Jquery: combos</a> 
 
                 </div>
             </div>
