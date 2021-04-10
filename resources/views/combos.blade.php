@@ -71,7 +71,7 @@
                 <br><hr>
 
                 <center>
-                <form name="usuario" action="" method="POST">
+                <form name="usuario" action="{{ route('datos') }}" method="POST">
                 {{ csrf_field() }}
                 <table>
                     <tr>

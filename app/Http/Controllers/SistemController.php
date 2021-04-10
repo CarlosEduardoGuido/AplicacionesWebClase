@@ -18,4 +18,15 @@ class SistemController extends Controller
             return view('combos')
                 ->with(['estados'=>$estados]);
     }
+    public function datos(Request $request){
+            dd($request->all());
+            return redirect()->route('combos');
+
+            /*
+            $estados = EstadosModel::all();
+            return view('combos')
+                ->with(['estados'=>$estados]);
+            */
+
+    }
 }

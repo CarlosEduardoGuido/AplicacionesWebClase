@@ -26,9 +26,11 @@ Route::name('formulario')->get('formulario/', function () { return view('formula
 
 Route::name('entrada')->get('entrada/', 'SistemController@entrada');
 Route::name('combos')->get('combos/', 'SistemController@combos');
+Route::name('datos')->post('datos/', 'SistemController@datos');
 // --------------------------------------------------------------------------------------------
 Route::name('js00')->get('js00/', 'JqueryController@js00');
-Route::name('js02')->get('js01/', 'JqueryController@js01');
-Route::name('js01')->get('js02/', 'JqueryController@js02');
+Route::name('js01')->get('js01/', 'JqueryController@js01');
+Route::name('js02')->get('js02/', 'JqueryController@js02');
+Route::name('js02b')->get('js02b/', 'JqueryController@js02b');
 
 
